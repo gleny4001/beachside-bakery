@@ -1,13 +1,15 @@
 import React from "react";
+import logoImg from "../images/brandLogoWithText.jpg";
 
 function Navbar() {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-md navbar-light">
         <a class="navbar-brand d-lg-none" href="#">
           <img
-            src="..images/brandLogowithText.jpg"
+            src={logoImg}
             alt="beachSide Logo with text"
+            class="logoWithText"
           />
         </a>
         <button
@@ -25,20 +27,24 @@ function Navbar() {
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a class="nav-link" href="#">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
                 About
               </a>
             </li>
-            <a class="d-none d-lg-block" href="#">
-              <img src="../images/brandLogowithText.jpg" />
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Menu
+              </a>
+            </li>
+            <a class="navbar-brand d-none d-lg-block" href="#">
+              <img
+                src={logoImg}
+                alt="beachSide Logo with text"
+                class="logoWithText"
+              />
             </a>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                Services
+                Order
               </a>
             </li>
             <li class="nav-item">

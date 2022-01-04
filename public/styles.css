@@ -1,0 +1,42 @@
+/* Navbar */
+
+.logoWithText {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 15%;
+}
+
+.navbar {
+  padding-top: 300px;
+}
+
+.nav-item {
+  padding: 30px 50px;
+}
+
+@media (max-width: 767px) {
+  .nav-item {
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+
+.navbar-toggler {
+  margin-right: 60px;
+}
+
+/* Header */
+.header-container {
+  text-align: center;
+}
+
+.header-text {
+  padding: 8% 0 2%;
+}
+
+hr {
+  position: relative;
+  left: 45%;
+  width: 10%;
+}
