@@ -1,7 +1,7 @@
 {
-  "name": "seaside-bakery",
+  "name": "beachside-backery",
   "version": "1.0.0",
-  "description": "",
+  "description": "A main website for beachside backery own by Michelle",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {

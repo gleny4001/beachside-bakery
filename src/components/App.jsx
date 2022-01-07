@@ -1,10 +1,12 @@
 import Navbar from "./Navbar";
 import Header from "./Header";
+import Body from "./Body";
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <Header />
+      <Navbar />
+      <Body />
     </div>
   );
 }

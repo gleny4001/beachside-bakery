@@ -1,19 +1,11 @@
 import React from "react";
-import logoImg from "../images/brandLogoWithText.jpg";
 
 function Navbar() {
   return (
-    <div>
-      <nav class="navbar navbar-expand-md navbar-light">
-        <a class="navbar-brand d-lg-none" href="#">
-          <img
-            src={logoImg}
-            alt="beachSide Logo with text"
-            class="logoWithText"
-          />
-        </a>
+    <div class="navbar-container">
+      <nav class="navbar navbar-expand-sm navbar-light">
         <button
-          class="navbar-toggler"
+          class="navbar-toggler ml-auto"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -24,7 +16,12 @@ function Navbar() {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Home
+              </a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
                 About
@@ -32,24 +29,23 @@ function Navbar() {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                Menu
+                products
               </a>
             </li>
-            <a class="navbar-brand d-none d-lg-block" href="#">
-              <img
-                src={logoImg}
-                alt="beachSide Logo with text"
-                class="logoWithText"
-              />
-            </a>
+
             <li class="nav-item">
               <a class="nav-link" href="#">
-                Order
+                gallery
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                Contact
+                order
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                contact
               </a>
             </li>
           </ul>
