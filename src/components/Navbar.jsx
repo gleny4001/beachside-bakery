@@ -3,9 +3,12 @@ import React from "react";
 function Navbar() {
   return (
     <div class="navbar-container">
-      <nav class="navbar navbar-expand-sm navbar-light">
+      <a class="navbar-brand mobile-navbar-brand" href="#">
+        Beachside-Goods
+      </a>
+      <nav class="navbar navbar-expand-sm navbar-light float-xs-right">
         <button
-          class="navbar-toggler ml-auto"
+          class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -27,17 +30,13 @@ function Navbar() {
                 About
               </a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                products
+              <a class="navbar-brand navbar-normal" href="#">
+                Beachside-Goods
               </a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                gallery
-              </a>
-            </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
                 order
