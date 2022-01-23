@@ -1,12 +1,21 @@
 import Navbar from "./Navbar";
 import Header from "./Header";
-import Body from "./Body";
+import Featured from "./Featured";
+import Overview from "./Overview";
+import Event from "./Event";
+import Contact from "./Contact";
+import Footer from "./Footer";
+
 function App() {
   return (
     <div className="App">
-      <Header />
       <Navbar />
-      <Body />
+      <Header />
+      <Featured />
+      <Overview />
+      <Event />
+      <Contact />
+      <Footer />
     </div>
   );
 }
