@@ -3,7 +3,6 @@ import Featured from "./Featured";
 import Overview from "./Overview";
 import Event from "./Event";
 import Contact from "./Contact";
-import Footer from "./Footer";
 
 function Home() {
   return (
@@ -13,7 +12,6 @@ function Home() {
       <Overview />
       <Event />
       <Contact />
-      <Footer />
     </div>
   );
 }
