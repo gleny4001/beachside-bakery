@@ -22,7 +22,7 @@ function Navbar() {
         <div class="collapse navbar-collapse me-auto" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <Link class="nav-link" to="/" activeClass="active">
+              <Link class="nav-link" to="/">
                 Home
               </Link>
             </li>
