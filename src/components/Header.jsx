@@ -1,5 +1,6 @@
 import React from "react";
 import headerImg from "../images/header-img/header-pie-img.jpg";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -13,9 +14,11 @@ function Header() {
             labore et dolore magna aliqua.
           </h5>
           <div class="button-container">
-            <a class="order-button" href="">
-              Order now
-            </a>
+            <Link to="product">
+              <a class="order-button" href="">
+                Order now
+              </a>
+            </Link>
           </div>
         </div>
       </div>
