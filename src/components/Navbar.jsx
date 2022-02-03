@@ -53,6 +53,7 @@ function Navbar() {
               </Scroll>
             </li>
           </ul>
+          <h2>Check out</h2>
         </div>
       </nav>
     </div>

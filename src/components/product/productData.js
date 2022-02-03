@@ -29,7 +29,7 @@ const productData = [
     button: "Add to Cart"
   },
   {
-    id: 3,
+    id: 4,
     img: product[3],
     alt: "Strawberry cheesecake",
     name: "Strawberry cheesecake",
@@ -38,7 +38,7 @@ const productData = [
     button: "Add to Cart"
   },
   {
-    id: 3,
+    id: 5,
     img: product[4],
     alt: "Strawberry cheesecake",
     name: "Strawberry cheesecake",
@@ -47,7 +47,7 @@ const productData = [
     button: "Add to Cart"
   },
   {
-    id: 3,
+    id: 6,
     img: product[5],
     alt: "Strawberry cheesecake",
     name: "Strawberry cheesecake",

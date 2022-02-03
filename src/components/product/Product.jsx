@@ -1,6 +1,8 @@
 import React from "react";
 import ProductCard from "./ProductCard";
 import productData from "./productData";
+import Cart from "./Cart";
+import { CartProvider } from "react-use-cart";
 
 function createProduct(contents) {
   return (
@@ -19,7 +21,10 @@ function createProduct(contents) {
 function Product(props) {
   return (
     <div class="product-container">
-      <dl class="feature-items">{productData.map(createProduct)}</dl>
+      <CartProvider>
+        <dl class="feature-items">{productData.map(createProduct)}</dl>
+        <Cart />
+      </CartProvider>
     </div>
   );
 }
