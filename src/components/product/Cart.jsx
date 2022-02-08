@@ -257,10 +257,10 @@ function Cart() {
                       <option>Alabama </option>
                       <option>Alaska </option>
                       <option>Arizona </option>
-                      <option>rkansas </option>
+                      <option>Arkansas </option>
                       <option>California </option>
                       <option>Colorado </option>
-                      <option>onnecticut </option>
+                      <option>Connecticut </option>
                       <option>Delaware </option>
                       <option>Florida </option>
                       <option>Georgia </option>
