@@ -7,7 +7,7 @@ const productData = [
     alt: "Apple pie",
     name: "Apple pie",
     desc: "consectetur adipiscing elitqua.",
-    price: "$11.99",
+    price: "11.99",
     button: "Add to Cart"
   },
   {
@@ -16,7 +16,7 @@ const productData = [
     alt: "Cookie",
     name: "Cookies",
     desc: "consectetur adipiscing elitqua.",
-    price: "$8.99",
+    price: "8.99",
     button: "Add to Cart"
   },
   {
@@ -25,7 +25,7 @@ const productData = [
     alt: "Strawberry cheesecake",
     name: "Strawberry cheesecake",
     desc: "consectetur adipiscing elitqua.",
-    price: "$15.99",
+    price: "15.99",
     button: "Add to Cart"
   },
   {
@@ -34,7 +34,7 @@ const productData = [
     alt: "Strawberry cheesecake",
     name: "Strawberry cheesecake",
     desc: "consectetur adipiscing elitqua.",
-    price: "$15.99",
+    price: "15.99",
     button: "Add to Cart"
   },
   {
@@ -43,7 +43,7 @@ const productData = [
     alt: "Strawberry cheesecake",
     name: "Strawberry cheesecake",
     desc: "consectetur adipiscing elitqua.",
-    price: "$15.99",
+    price: "15.99",
     button: "Add to Cart"
   },
   {
@@ -52,7 +52,7 @@ const productData = [
     alt: "Strawberry cheesecake",
     name: "Strawberry cheesecake",
     desc: "consectetur adipiscing elitqua.",
-    price: "$15.99",
+    price: "15.99",
     button: "Add to Cart"
   }
 ];

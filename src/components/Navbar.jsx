@@ -52,8 +52,12 @@ function Navbar() {
                 contact
               </Scroll>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link nav-cart" to="cartPage">
+                Cart
+              </Link>
+            </li>
           </ul>
-          <h2>Check out</h2>
         </div>
       </nav>
     </div>
