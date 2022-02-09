@@ -16,7 +16,7 @@ function ProductCard(props) {
             <span class="product-excerpt">{props.productDesc}</span>
           </dd>
 
-          <span>{props.price}</span>
+          <span>${props.price}</span>
         </div>
         <a class="order-button" onClick={() => addItem(props)}>
           {props.button}

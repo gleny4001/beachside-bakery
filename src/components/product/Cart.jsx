@@ -1,6 +1,5 @@
 import React from "react";
 import { useCart } from "react-use-cart";
-import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 
 function sendEmail(e) {
@@ -22,6 +21,10 @@ function sendEmail(e) {
       }
     );
   e.target.reset();
+}
+
+function toNumber(n) {
+  return parseFloat(n);
 }
 
 function Cart() {
@@ -390,12 +393,26 @@ function Cart() {
                         </td>
                         <td class="cart-product-name">{item.productName}</td>
 
-                        <td>${item.price}</td>
+                        <td>
+                          ${item.price} ({item.quantity})
+                        </td>
+
+                        <td>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                            onClick={() => removeItem(item.id)}
+                          >
+                            X
+                          </button>
+                        </td>
                       </tr>
                     </table>
                   );
                 })}
-                <h2>Total : ${cartTotal}</h2>
+                <h2>
+                  Total : ${cartTotal} ({totalUniqueItems} items)
+                </h2>
               </div>
               <div class="modal-footer">
                 <button
