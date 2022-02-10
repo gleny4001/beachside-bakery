@@ -52,11 +52,7 @@ function Navbar() {
                 contact
               </Scroll>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link nav-cart" to="cartPage">
-                Cart
-              </Link>
-            </li>
+            <li class="nav-item"></li>
           </ul>
         </div>
       </nav>

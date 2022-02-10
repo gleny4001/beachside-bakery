@@ -4,7 +4,8 @@ import Navbar from "./Navbar";
 import Product from "./product/Product";
 import Footer from "./Footer";
 import CartPage from "./product/CartPage";
-import OrderPage from "./product/OrderPage";
+import FloatButton from "./FloatButton";
+import OrderSuccess from "./product/OrderSuccess";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -16,9 +17,12 @@ function App() {
         <Route path="about" element={<About />}></Route>
         <Route path="product" element={<Product />}></Route>
         <Route path="cartPage" element={<CartPage />}></Route>
-        <Route path="/orderPage" element={<OrderPage />}></Route>
+        <Route path="/cartPage" element={<FloatButton />}></Route>
+        <Route path="cartPage/orderSuccess" element={<OrderSuccess />}></Route>
       </Routes>
+
       <Footer />
+      <FloatButton />
     </div>
   );
 }
