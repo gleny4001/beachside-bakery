@@ -32,7 +32,8 @@ function Cart() {
     totalItems,
     cartTotal,
     updateItemQuantity,
-    removeItem
+    removeItem,
+    emptyCart
   } = useCart();
 
   if (isEmpty)
@@ -361,7 +362,11 @@ function Cart() {
                   data-bs-dismiss="modal"
                   form="order-form"
                 >
-                  <Link class="order-success" to="orderSuccess">
+                  <Link
+                    class="order-success"
+                    to="orderSuccess"
+                    onClick={emptyCart}
+                  >
                     Submit Order
                   </Link>
                 </button>

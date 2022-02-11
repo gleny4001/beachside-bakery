@@ -48,7 +48,6 @@ function Navbar() {
                 contact
               </Link>
             </li>
-            <li class="nav-item"></li>
           </ul>
         </div>
       </nav>
