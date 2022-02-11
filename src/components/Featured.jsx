@@ -4,7 +4,7 @@ import product from "../images";
 function Featured() {
   return (
     <div class="feature-container">
-      <h1 class="feature-title section-title">Popular sweets</h1>
+      <h1 class="feature-title section-title">Featured Items</h1>
 
       <div
         data-aos="fade-up"
@@ -16,18 +16,19 @@ function Featured() {
         <div class="product-card">
           <img class="feature-image" src={product[3]} alt="" />
           <div class="product-content">
-            <h3 class="product-title">Pound Cake</h3>
+            <h3 class="product-title">Kumquat Bundt Cake</h3>
             <p class="product-excerpt">
-              Nunc posuere nunc quis ex tempor molestie.
+              Tree-ripend Kumquats baked in a spongy bundt cake
             </p>
           </div>
         </div>
         <div class="product-card">
           <img class="feature-image" src={product[4]} alt="" />
           <div class="product-content">
-            <h3 class="product-title">Kitkat Cake</h3>
+            <h3 class="product-title">Candy Cake</h3>
             <p class="product-excerpt">
-              Nunc posuere nunc quis ex tempor molestie.
+              Fully customize this cake with your favorit candy for a sweet
+              treat
             </p>
           </div>
         </div>
@@ -36,16 +37,17 @@ function Featured() {
           <div class="product-content">
             <h3 class="product-title">Cupcakes</h3>
             <p class="product-excerpt">
-              Nunc posuere nunc quis ex tempor molestie.
+              Topped with handmixed butter cream frosting that can be made to
+              match any theme
             </p>
           </div>
         </div>
         <div class="product-card">
           <img class="feature-image" src={product[6]} alt="" />
           <div class="product-content">
-            <h3 class="product-title">Coconut bites</h3>
+            <h3 class="product-title">Coconut Macaroons</h3>
             <p class="product-excerpt">
-              Nunc posuere nunc quis ex tempor molestie.
+              Prefect bite sized macaroons that are dipped in dark chocolate
             </p>
           </div>
         </div>

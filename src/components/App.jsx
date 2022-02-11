@@ -3,6 +3,7 @@ import About from "./About";
 import Navbar from "./Navbar";
 import Product from "./product/Product";
 import Footer from "./Footer";
+import ContactPage from "./ContactPage";
 import CartPage from "./product/CartPage";
 import FloatButton from "./FloatButton";
 import OrderSuccess from "./product/OrderSuccess";
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="about" element={<About />}></Route>
         <Route path="product" element={<Product />}></Route>
+        <Route path="contactPage" element={<ContactPage />}></Route>
         <Route path="cartPage" element={<CartPage />}></Route>
         <Route path="/cartPage" element={<FloatButton />}></Route>
         <Route path="cartPage/orderSuccess" element={<OrderSuccess />}></Route>

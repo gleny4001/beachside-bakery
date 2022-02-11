@@ -361,7 +361,9 @@ function Cart() {
                   data-bs-dismiss="modal"
                   form="order-form"
                 >
-                  <Link to="orderSuccess">Submit Order</Link>
+                  <Link class="order-success" to="orderSuccess">
+                    Submit Order
+                  </Link>
                 </button>
               </div>
             </div>

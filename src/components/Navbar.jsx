@@ -6,7 +6,7 @@ function Navbar() {
     <div class="navbar-container">
       <nav class="navbar navbar-expand-sm navbar-light">
         <Link class="navbar-brand mobile-navbar-brand" to="/">
-          Beachside Goods
+          BEACHSIDE GOODS
         </Link>
         <button
           class="navbar-toggler"
@@ -33,9 +33,9 @@ function Navbar() {
             </li>
 
             <li class="nav-item">
-              <a class="navbar-brand navbar-normal" href="#">
-                Beachside-Goods
-              </a>
+              <Link class="navbar-brand navbar-normal" to="/">
+                BEACHSIDE GOODS
+              </Link>
             </li>
 
             <li class="nav-item">
@@ -44,13 +44,9 @@ function Navbar() {
               </Link>
             </li>
             <li class="nav-item">
-              <Scroll
-                class="nav-link contact-nav"
-                to="logo-container"
-                spy={true}
-              >
+              <Link class="nav-link" to="contactPage">
                 contact
-              </Scroll>
+              </Link>
             </li>
             <li class="nav-item"></li>
           </ul>

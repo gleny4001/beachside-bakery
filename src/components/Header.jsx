@@ -8,10 +8,10 @@ function Header() {
       <div class="header-container">
         <img src={headerImg} alt="header-pie-image" class="header-pie" />
         <div class="header-content">
-          <h1 class="header-title">Lorem ipsum dolor sit amet</h1>
+          <h1 class="header-title">Handmade Baked Goods</h1>
           <h5 class="header-text">
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua.
+            Cookies, cakes, pies and treats made by hand in Huntington Beach,
+            California
           </h5>
           <div class="button-container">
             <Link to="product">
