@@ -197,6 +197,10 @@ ul.navbar-nav {
   background-color: white;
 }
 
+.product-container {
+  padding: 5% 15%;
+}
+
 .product-card {
   text-align: center;
   margin: 20px 0;
