@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 function FloatButton() {
   return (
     <div>
-      <Link class="float-button" to="cartPage">
-        <i class="fas fa-shopping-cart"></i>
+      <Link className="float-button" to="cartPage">
+        <i className="fas fa-shopping-cart"></i>
       </Link>
     </div>
   );

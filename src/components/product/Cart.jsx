@@ -38,27 +38,27 @@ function Cart() {
 
   if (isEmpty)
     return (
-      <div class="cart-container">
+      <div className="cart-container">
         <h2>Your Cart is Empty</h2>
       </div>
     );
 
   return (
-    <div class="cart-container">
-      <div class="cart-list">
+    <div className="cart-container">
+      <div className="cart-list">
         {items.map((item, index) => {
           return (
-            <div class="cart-table">
+            <div className="cart-table">
               <div>
-                <img src={item.img} class="cart-img" alt="" />
+                <img src={item.img} className="cart-img" alt="" />
               </div>
-              <div class="cart-product">
-                <h2 class="cart-product-name">{item.productName}</h2>
+              <div className="cart-product">
+                <h2 className="cart-product-name">{item.productName}</h2>
               </div>
-              <div class="updateCart cart-product">
+              <div className="updateCart cart-product">
                 <button
                   type="button"
-                  class="btn btn-light"
+                  className="btn btn-light"
                   onClick={() => updateItemQuantity(item.id, item.quantity - 1)}
                 >
                   -
@@ -68,22 +68,22 @@ function Cart() {
 
                 <button
                   type="button"
-                  class="btn btn-light"
+                  className="btn btn-light"
                   onClick={() => updateItemQuantity(item.id, item.quantity + 1)}
                 >
                   +
                 </button>
               </div>
-              <div class="delete-item cart-product">
+              <div className="delete-item cart-product">
                 <button
                   type="button"
-                  class="btn btn-outline-secondary"
+                  className="btn btn-outline-secondary"
                   onClick={() => removeItem(item.id)}
                 >
                   Delete
                 </button>
               </div>
-              <div class="cart-product">
+              <div className="cart-product">
                 <td>${item.price}</td>
               </div>
             </div>
@@ -91,12 +91,12 @@ function Cart() {
         })}
       </div>
 
-      <div class="check-out">
+      <div className="check-out">
         <h1>Subtotal ({totalItems} items)</h1>
         <h3>${cartTotal}</h3>
 
         <a
-          class="btn btn-primary order-button cart-button"
+          className="btn btn-primary order-button cart-button"
           data-bs-toggle="modal"
           href="#exampleModalToggle"
           role="button"
@@ -104,64 +104,66 @@ function Cart() {
           Place an Order
         </a>
         <div
-          class="modal fade"
+          className="modal fade"
           id="exampleModalToggle"
           aria-hidden="true"
           aria-labelledby="exampleModalToggleLabel"
           tabindex="-1"
         >
-          <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalToggleLabel">
+          <div className="modal-dialog modal-dialog-centered modal-xl">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalToggleLabel">
                   Your info
                 </h5>
                 <button
                   type="button"
-                  class="btn-close"
+                  className="btn-close"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div className="modal-body">
                 <form
-                  class="row g-3 needs-validation"
+                  className="row g-3 needs-validation"
                   onSubmit={sendEmail}
                   id="order-form"
                 >
-                  <div class="col-md-4">
-                    <label for="name" class="form-label">
+                  <div className="col-md-4">
+                    <label for="name" className="form-label">
                       Name
                     </label>
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       id="name"
                       name="name"
                       required
                     />
-                    <div class="valid-feedback">Looks good!</div>
+                    <div className="valid-feedback">Looks good!</div>
                   </div>
 
-                  <div class="col-md-4">
-                    <label for="email" class="form-label">
+                  <div className="col-md-4">
+                    <label for="email" className="form-label">
                       Email
                     </label>
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       id="email"
                       name="email"
                       required
                     />
-                    <div class="invalid-feedback">Please provide an email.</div>
+                    <div className="invalid-feedback">
+                      Please provide an email.
+                    </div>
                   </div>
-                  <div class="col-md-4">
-                    <label for="delivery" class="form-label">
+                  <div className="col-md-4">
+                    <label for="delivery" className="form-label">
                       Delivery methods
                     </label>
                     <select
-                      class="form-select"
+                      className="form-select"
                       id="delivery"
                       name="delivery"
                       required
@@ -174,34 +176,34 @@ function Cart() {
                       <option>Delivery</option>
                     </select>
                   </div>
-                  <div class="col-md-4">
-                    <label for="city" class="form-label">
+                  <div className="col-md-4">
+                    <label for="city" className="form-label">
                       City (*Optional)
                     </label>
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       id="city"
                       name="city"
                     />
                   </div>
-                  <div class="col-md-8">
-                    <label for="address" class="form-label">
+                  <div className="col-md-8">
+                    <label for="address" className="form-label">
                       Address (*Optional)
                     </label>
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       id="address"
                       name="address"
                     />
                   </div>
 
-                  <div class="col-md-4">
-                    <label for="state" class="form-label">
+                  <div className="col-md-4">
+                    <label for="state" className="form-label">
                       State (*Optional)
                     </label>
-                    <select class="form-select" id="state" name="state">
+                    <select className="form-select" id="state" name="state">
                       <option selected disabled value="">
                         Choose...
                       </option>
@@ -258,40 +260,40 @@ function Cart() {
                     </select>
                   </div>
 
-                  <div class="col-md-4">
-                    <label for="zip" class="form-label">
+                  <div className="col-md-4">
+                    <label for="zip" className="form-label">
                       Zip (*Optional)
                     </label>
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       id="zip"
                       name="zip"
                     />
                   </div>
-                  <div class="col-md-4">
-                    <label for="phone-number" class="form-label">
+                  <div className="col-md-4">
+                    <label for="phone-number" className="form-label">
                       Phone number (*Optional)
                     </label>
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       id="phone-number"
                       name="phone-number"
                     />
                   </div>
-                  <div class="mb-3">
-                    <label for="custom-message" class="form-label">
+                  <div className="mb-3">
+                    <label for="custom-message" className="form-label">
                       Message (*Optional)
                     </label>
                     <textarea
-                      class="form-control"
+                      className="form-control"
                       id="custom-message"
                       placeholder="Let me know if you have any questions or requests!"
                       name="custom-message"
                     ></textarea>
                   </div>
-                  <div class="order-sum">
+                  <div className="order-sum">
                     <input
                       type="text"
                       name="order"
@@ -301,9 +303,9 @@ function Cart() {
                     />
                     <input type="text" name="order-total" value={cartTotal} />
                   </div>
-                  <div class="modal-footer col-12">
+                  <div className="modal-footer col-12">
                     <button
-                      class="btn btn-primary"
+                      className="btn btn-primary"
                       data-bs-target="#exampleModalToggle2"
                       data-bs-toggle="modal"
                     >
@@ -316,34 +318,40 @@ function Cart() {
           </div>
         </div>
         <div
-          class="modal fade"
+          className="modal fade"
           id="exampleModalToggle2"
           aria-hidden="true"
           aria-labelledby="exampleModalToggleLabel2"
           tabindex="-1"
         >
-          <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalToggleLabel2">
+          <div className="modal-dialog modal-dialog-centered modal-xl">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalToggleLabel2">
                   Summary
                 </h5>
                 <button
                   type="button"
-                  class="btn-close"
+                  className="btn-close"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div className="modal-body">
                 {items.map((item, index) => {
                   return (
-                    <table class="cart-table">
+                    <table className="cart-table">
                       <tr key={index}>
                         <td rowspan="2">
-                          <img src={item.img} class="cart-img" alt={item.alt} />
+                          <img
+                            src={item.img}
+                            className="cart-img"
+                            alt={item.alt}
+                          />
                         </td>
-                        <td class="cart-product-name">{item.productName}</td>
+                        <td className="cart-product-name">
+                          {item.productName}
+                        </td>
 
                         <td>
                           ${item.price} ({item.quantity})
@@ -356,14 +364,14 @@ function Cart() {
                   Total : ${cartTotal} ({totalUniqueItems} items)
                 </h2>
               </div>
-              <div class="modal-footer">
+              <div className="modal-footer">
                 <button
-                  class="btn btn-primary"
+                  className="btn btn-primary"
                   data-bs-dismiss="modal"
                   form="order-form"
                 >
                   <Link
-                    class="order-success"
+                    className="order-success"
                     to="orderSuccess"
                     onClick={emptyCart}
                   >

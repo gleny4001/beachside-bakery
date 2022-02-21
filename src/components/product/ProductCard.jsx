@@ -5,21 +5,21 @@ function ProductCard(props) {
   const { addItem } = useCart();
 
   return (
-    <dl class="feature-items product-page">
-      <div class="product-card">
-        <img class="feature-image" src={props.img} alt={props.alt} />
-        <div class="product-content">
+    <dl className="feature-items product-page">
+      <div className="product-card">
+        <img className="feature-image" src={props.img} alt={props.alt} />
+        <div className="product-content">
           <dt>
-            <span class="product-title">{props.productName}</span>
+            <span className="product-title">{props.productName}</span>
           </dt>
           <dd>
-            <span class="product-excerpt">{props.productDesc}</span>
+            <span className="product-excerpt">{props.productDesc}</span>
           </dd>
 
           <span>${props.price}</span>
         </div>
 
-        <a class="order-button" onClick={() => addItem(props)}>
+        <a className="order-button" onClick={() => addItem(props)}>
           {props.button}
         </a>
       </div>

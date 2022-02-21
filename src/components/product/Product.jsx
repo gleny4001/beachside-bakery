@@ -19,9 +19,9 @@ function createProduct(contents) {
 }
 function Product() {
   return (
-    <div class="product-container">
+    <div className="product-container">
       <CartProvider>
-        <dl class="feature-items">{productData.map(createProduct)}</dl>
+        <dl className="feature-items">{productData.map(createProduct)}</dl>
       </CartProvider>
     </div>
   );

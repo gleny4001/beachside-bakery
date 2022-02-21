@@ -5,19 +5,17 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div>
-      <div class="header-container">
-        <img src={headerImg} alt="header-pie-image" class="header-pie" />
-        <div class="header-content">
-          <h1 class="header-title">Handmade Baked Goods</h1>
-          <h5 class="header-text">
+      <div className="header-container">
+        <img src={headerImg} alt="header-pie-image" className="header-pie" />
+        <div className="header-content">
+          <h1 className="header-title">Handmade Baked Goods</h1>
+          <h5 className="header-text">
             Cookies, cakes, pies and treats made by hand in Huntington Beach,
             California
           </h5>
-          <div class="button-container">
-            <Link to="product">
-              <a class="order-button" href="">
-                Order now
-              </a>
+          <div className="button-container">
+            <Link className="order-button" to="product">
+              Order now
             </Link>
           </div>
         </div>

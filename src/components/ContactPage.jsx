@@ -25,61 +25,65 @@ function sendEmail(e) {
 
 function ContactPage() {
   return (
-    <div class="contact-page-container">
-      <div class="contact-page-content">
+    <div className="contact-page-container">
+      <div className="contact-page-content">
         <h1>Get in touch!</h1>
         <p>Let us know if you have any questions</p>
       </div>
-      <div class="contact-form ">
-        <form class="row g-3 needs-validation" onSubmit={sendEmail} novalidate>
-          <div class="col-md-12">
-            <label for="customer-name" class="form-label">
+      <div className="contact-form ">
+        <form
+          className="row g-3 needs-validation"
+          onSubmit={sendEmail}
+          novalidate
+        >
+          <div className="col-md-12">
+            <label for="customer-name" className="form-label">
               Name
             </label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="customer-name"
               name="customer-name"
               required
             />
-            <div class="valid-feedback">Looks good!</div>
+            <div className="valid-feedback">Looks good!</div>
           </div>
 
-          <div class="col-md-12">
-            <label for="customer-email" class="form-label">
+          <div className="col-md-12">
+            <label for="customer-email" className="form-label">
               Email
             </label>
-            <div class="input-group has-validation">
+            <div className="input-group has-validation">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="customer-email"
                 name="customer-email"
                 required
               />
-              <div class="invalid-feedback">Please choose a username.</div>
+              <div className="invalid-feedback">Please choose a username.</div>
             </div>
           </div>
-          <div class="col-md-12">
-            <label for="customer-message" class="form-label">
+          <div className="col-md-12">
+            <label for="customer-message" className="form-label">
               Message
             </label>
             <textarea
-              class="form-control"
+              className="form-control"
               id="customer-message"
               name="customer-message"
               required
             ></textarea>
           </div>
-          <div class="col-12">
-            <button class="btn btn-primary" type="submit">
+          <div className="col-12">
+            <button className="btn btn-primary" type="submit">
               Send message
             </button>
           </div>
         </form>
       </div>
-      <div class="contact-detail">
+      <div className="contact-detail">
         <Contact />
       </div>
     </div>

@@ -1,52 +1,72 @@
 import React from "react";
-import product from "../images";
+import product from "./product/productData";
+
+function findImg(productName) {
+  return product.find(({ name }) => name === productName).img;
+}
 
 function Featured() {
   return (
-    <div class="feature-container">
-      <h1 class="feature-title section-title">Featured Items</h1>
+    <div className="feature-container">
+      <h1 className="feature-title section-title">Featured Items</h1>
 
       <div
         data-aos="fade-up"
         data-aos-duration="800"
         data-aos-easing="ease-in-out"
-        class="feature-items"
+        className="feature-items"
         data-aos-once="true"
       >
-        <div class="product-card">
-          <img class="feature-image" src={product[3]} alt="" />
-          <div class="product-content">
-            <h3 class="product-title">Kumquat Bundt Cake</h3>
-            <p class="product-excerpt">
+        <div className="product-card">
+          <img
+            className="feature-image"
+            src={findImg("Kumquat Bundt Cake")}
+            alt="Kumquat Bundt Cake"
+          />
+          <div className="product-content">
+            <h3 className="product-title">Kumquat Bundt Cake</h3>
+            <p className="product-excerpt">
               Tree-ripend Kumquats baked in a spongy bundt cake
             </p>
           </div>
         </div>
-        <div class="product-card">
-          <img class="feature-image" src={product[4]} alt="" />
-          <div class="product-content">
-            <h3 class="product-title">Candy Cake</h3>
-            <p class="product-excerpt">
+        <div className="product-card">
+          <img
+            className="feature-image"
+            src={findImg("Candy Cake")}
+            alt="Candy Cake"
+          />
+          <div className="product-content">
+            <h3 className="product-title">Candy Cake</h3>
+            <p className="product-excerpt">
               Fully customize this cake with your favorit candy for a sweet
               treat
             </p>
           </div>
         </div>
-        <div class="product-card">
-          <img class="feature-image" src={product[5]} alt="" />
-          <div class="product-content">
-            <h3 class="product-title">Cupcakes</h3>
-            <p class="product-excerpt">
+        <div className="product-card">
+          <img
+            className="feature-image"
+            src={findImg("Cupcakes")}
+            alt="Cupcakes"
+          />
+          <div className="product-content">
+            <h3 className="product-title">Cupcakes</h3>
+            <p className="product-excerpt">
               Topped with handmixed butter cream frosting that can be made to
               match any theme
             </p>
           </div>
         </div>
-        <div class="product-card">
-          <img class="feature-image" src={product[6]} alt="" />
-          <div class="product-content">
-            <h3 class="product-title">Coconut Macaroons</h3>
-            <p class="product-excerpt">
+        <div className="product-card">
+          <img
+            className="feature-image"
+            src={findImg("Coconut Macaroons")}
+            alt="Coconut Macaroons"
+          />
+          <div className="product-content">
+            <h3 className="product-title">Coconut Macaroons</h3>
+            <p className="product-excerpt">
               Prefect bite sized macaroons that are dipped in dark chocolate
             </p>
           </div>
