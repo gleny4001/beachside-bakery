@@ -16,6 +16,11 @@ import cakePops from "../../images/products/cake pops.jpg";
 import pretzelRods from "../../images/products/pretzels 2.jpg";
 import chocolateCoveredStrawberries from "../../images/products/chocolate covered strawberries .jpg";
 import chocolateCoveredCherries from "../../images/products/cherries.jpg";
+import miniRaspberyyCheesecakes from "../../images/products/mini raspberry cheesecakes.jpg";
+import heartCake from "../../images/products/heart cake 3.jpg";
+import riceKrispyTreats from "../../images/products/rice krispy treats 2.jpg";
+import peppermintBark from "../../images/products/peppermintBark.jpg";
+import raspberryCreamCheesecake from "../../images/products/raspberry cream cheesecake .jpg";
 
 const productData = [
   {
@@ -71,7 +76,7 @@ const productData = [
     button: "Add to Cart"
   },
   {
-    id: 7,
+    id: 6,
     img: chocolateCoveredCherries,
     alt: "Chocolate Covered Cherries",
     name: "Chocolate Covered Cherries",
@@ -207,6 +212,59 @@ const productData = [
       "One dozen chocolate covered strawberries. Decorations and colors fully customizable.",
     price: "20",
     type: "etc",
+    button: "Add to Cart"
+  },
+  {
+    id: 19,
+    img: miniRaspberyyCheesecakes,
+    alt: "Mini Raspberry Cheescakes",
+    name: "Mini Raspberry Cheescakes",
+    desc:
+      "One dozen cupcake sized cheesecakes with a swirl of raspberry syrup.",
+    price: "28",
+    type: "cake",
+    button: "Add to Cart"
+  },
+  {
+    id: 20,
+    img: heartCake,
+    alt: "Heart Cake",
+    name: "Heart Cake",
+    desc: "Any flavor cake, fully customizable for flavor and design.",
+    price: "15",
+    type: "cake",
+    button: "Add to Cart"
+  },
+  {
+    id: 21,
+    img: riceKrispyTreats,
+    alt: "Rice Krispy Treats",
+    name: "Rice Krispy Treats",
+    desc:
+      "One dozen chocolate dipped rice Krispy treats. Customize the dipping color and decorations.",
+    price: "10",
+    type: "etc",
+    button: "Add to Cart"
+  },
+  {
+    id: 22,
+    img: peppermintBark,
+    alt: "Peppermint Bark",
+    name: "Peppermint Bark",
+    desc: "One dozen chunks of peppermint bark.",
+    price: "10",
+    type: "etc",
+    button: "Add to Cart"
+  },
+  {
+    id: 23,
+    img: raspberryCreamCheesecake,
+    alt: "Raspberry Cream Cheescake",
+    name: "Raspberry Cream Cheescake",
+    desc:
+      "Raspberry cheesecake made with raspberry syrup and topped with raspberries.",
+    price: "15",
+    type: "cake",
     button: "Add to Cart"
   }
 ];
