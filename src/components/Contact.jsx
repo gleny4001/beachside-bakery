@@ -19,7 +19,7 @@ function Contact() {
             <i className="fas fa-phone"></i> 714-951-8107
           </p>
           <p className="contact-info">
-            <i className="fab fa-instagram"></i> @beachsidegoods
+            <i className="fab fa-instagram"></i> @beachside_goods
           </p>
         </div>
       </div>

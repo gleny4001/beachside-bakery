@@ -1,7 +1,9 @@
 import React from "react";
-import overview1 from "../images/overview-img/overview1.jpg";
-import overview2 from "../images/overview-img/overview2.jpg";
-import overview3 from "../images/overview-img/overview3.jpg";
+import aboutImg from "../images/about/aboutImg.jpg";
+import slide1 from "../images/about/slide-img-1.jpg";
+import slide2 from "../images/about/slide-img-2.jpg";
+import slide3 from "../images/about/slide-img-3.jpg";
+
 function About() {
   return (
     <>
@@ -34,41 +36,29 @@ function About() {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img
-              src={overview1}
-              class="d-block w-100 about-page-img"
-              alt="..."
-            />
+            <img src={slide1} class="d-block w-100 about-page-img" alt="..." />
             <div class="carousel-caption d-block">
-              <h1 className="about-carousel-title">First slide label</h1>
+              <h1 className="about-carousel-title">Fresh</h1>
               <p className="about-carousel-content">
-                Some representative placeholder content for the first slide.
+                We use fresh and hand-picked ingredients
               </p>
             </div>
           </div>
           <div class="carousel-item">
-            <img
-              src={overview2}
-              class="d-block w-100 about-page-img"
-              alt="..."
-            />
+            <img src={slide2} class="d-block w-100 about-page-img" alt="..." />
             <div class="carousel-caption d-block">
-              <h1 className="about-carousel-title">Second slide label</h1>
+              <h1 className="about-carousel-title">Homemade & Handmade</h1>
               <p className="about-carousel-content">
-                Some representative placeholder content for the second slide.
+                All of our products are handmade professionally
               </p>
             </div>
           </div>
           <div class="carousel-item">
-            <img
-              src={overview3}
-              class="d-block w-100 about-page-img"
-              alt="..."
-            />
+            <img src={slide3} class="d-block w-100 about-page-img" alt="..." />
             <div class="carousel-caption d-block">
-              <h1 className="about-carousel-title">Third slide label</h1>
+              <h1 className="about-carousel-title">Customizable</h1>
               <p className="about-carousel-content">
-                Some representative placeholder content for the third slide.
+                You can customize our goods however you want
               </p>
             </div>
           </div>
@@ -94,7 +84,7 @@ function About() {
       </div>
       <div className="about-page-container">
         <div className="about-image-container">
-          <img src={overview1} className="about-img" alt="" />
+          <img src={aboutImg} className="about-img" alt="" />
         </div>
         <div className="about-content">
           <h1 className="about-title">About us</h1>

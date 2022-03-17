@@ -364,6 +364,11 @@ ul.navbar-nav {
   padding: 5vw 0;
 }
 
+.event-content {
+  padding: 30px;
+  align-items: center;
+}
+
 .event-subject {
   font-size: calc(13px + 1vw);
 }
@@ -654,9 +659,8 @@ ul.navbar-nav {
   margin-left: -50px;
   background-color: white;
   padding: 20px;
-  border: 1rem solid #c1f4c5;
+  border: 2px solid #5ee6eb;
   text-align: center;
-  overflow: auto;
 }
 .about-title {
   font-size: 2rem;
