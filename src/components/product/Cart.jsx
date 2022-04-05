@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useCart } from "react-use-cart";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
@@ -35,6 +35,9 @@ function Cart() {
     removeItem,
     emptyCart
   } = useCart();
+  const [inputName, setInputName] = useState("");
+  const [inputEmail, setInputEmail] = useState("");
+  const [inputDelivery, setInputDelivery] = useState("");
 
   if (isEmpty)
     return (
@@ -140,6 +143,8 @@ function Cart() {
                       className="form-control"
                       id="name"
                       name="name"
+                      value={inputName}
+                      onChange={(e) => setInputName(e.target.value)}
                       required
                     />
                     <div className="valid-feedback">Looks good!</div>
@@ -154,6 +159,8 @@ function Cart() {
                       className="form-control"
                       id="email"
                       name="email"
+                      value={inputEmail}
+                      onChange={(e) => setInputEmail(e.target.value)}
                       required
                     />
                     <div className="invalid-feedback">
@@ -169,6 +176,8 @@ function Cart() {
                       id="delivery"
                       name="delivery"
                       required
+                      value={inputDelivery}
+                      onChange={(e) => setInputDelivery(e.target.value)}
                     >
                       <option selected disabled value="">
                         Choose...
@@ -310,6 +319,7 @@ function Cart() {
                       className="btn btn-primary"
                       data-bs-target="#exampleModalToggle2"
                       data-bs-toggle="modal"
+                      disabled={!inputName || !inputEmail || !inputDelivery}
                     >
                       Confirm
                     </button>

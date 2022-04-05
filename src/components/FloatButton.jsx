@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function FloatButton() {
+function FloatButton(props) {
   return (
     <div>
       <Link className="float-button" to="cartPage">

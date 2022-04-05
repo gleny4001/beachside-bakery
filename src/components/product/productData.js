@@ -10,7 +10,7 @@ import coconutMacaroons from "../../images/products/Coconut Macaroons.jpg";
 import blossomCookies from "../../images/products/Blossom Cookies.jpg";
 import traditionalChocolateChipCookies from "../../images/products/Traditional Chocolate Chip Cookies 2.jpg";
 import hotCocoBombs from "../../images/products/Hot Coco Bombs.jpg";
-import pumpkinBread from "../../images/products/Pumpkin Bread.jpg";
+import pumpkinBread from "../../images/products/Pumpkin-bread.jpg";
 import brownies from "../../images/products/brownies 2.jpg";
 import cakePops from "../../images/products/cake pops.jpg";
 import pretzelRods from "../../images/products/pretzels 2.jpg";
