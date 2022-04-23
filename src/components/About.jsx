@@ -4,8 +4,10 @@ import beach from "../images/about/beach.jpg";
 function About() {
   return (
     <>
-      <img src={beach} alt="Huntington Beach" className="about-beach" />
-      <h1 className="about-us">ABOUT US</h1>
+      <div className="about-heading">
+        {/* <img src={beach} alt="Huntington Beach" className="about-beach" /> */}
+        <h1 className="about-us">ABOUT US</h1>
+      </div>
       <div className="about-page-container">
         <div className="about-content">
           <h1 className="about-title">True homemade bakes</h1>

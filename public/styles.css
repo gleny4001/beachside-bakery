@@ -568,6 +568,9 @@ ul.navbar-nav {
   text-align: center;
 }
 
+.modal-backdrop {
+  opacity: 0.2 !important;
+}
 .order-sum {
   display: none;
 }
@@ -651,23 +654,30 @@ ul.navbar-nav {
   padding: 5% 10%;
 }
 
-.modal {
+.modal-dsdfasfs {
   opacity: 0.8;
   color: #585858;
 }
 
 .about-beach {
   width: 100%;
-  height: 600px;
+  height: 30vw;
   opacity: 0.7;
 }
 
+.about-heading {
+  width: 100%;
+  height: 30vw;
+  background: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_864,q_60,w_1920/v1/clients/surfcityusa-redesign/Pier_6_5a516879-7d01-474a-980f-945d84ce4d61.jpg");
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .about-us {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 8rem;
+  font-size: calc(30px + 8vw);
   font-weight: 900;
   color: white;
 }
@@ -682,8 +692,8 @@ ul.navbar-nav {
   font-weight: 800;
 }
 .about-excerpt {
-  font-size: 1.7rem;
+  font-size: calc(12px + 1vw);
   font-weight: 500;
-  line-height: 2.5;
+  line-height: calc(18px + 2vw);
   letter-spacing: 2px;
 }
